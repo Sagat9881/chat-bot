@@ -1,6 +1,7 @@
 package ru.apzakharov.projects.handlers;
 
 import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
 import ru.apzakharov.projects.domain.User;
 import ru.apzakharov.projects.dto.Answer;
 import ru.apzakharov.projects.dto.ClassifiedUpdate;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-
+@Component
 public class HandlersMap {
     private HashMap<TelegramType, List<Handler>> hashMap = new HashMap<>();
     private final List<Handler> handlers;

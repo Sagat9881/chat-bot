@@ -1,12 +1,14 @@
 package ru.apzakharov.projects.handlers.commands;
 
 import lombok.SneakyThrows;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import ru.apzakharov.projects.domain.User;
 import ru.apzakharov.projects.dto.Answer;
 import ru.apzakharov.projects.dto.ClassifiedUpdate;
 import ru.apzakharov.projects.handlers.CommandHandler;
 import ru.apzakharov.projects.util.SendMessageBuilder;
-
+@Component
 public class StartCommand implements Command {
     @Override
     public Class handler() {

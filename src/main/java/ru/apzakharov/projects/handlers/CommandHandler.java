@@ -1,5 +1,6 @@
 package ru.apzakharov.projects.handlers;
 
+import org.springframework.stereotype.Service;
 import ru.apzakharov.projects.domain.User;
 import ru.apzakharov.projects.dto.Answer;
 import ru.apzakharov.projects.dto.ClassifiedUpdate;
@@ -7,7 +8,7 @@ import ru.apzakharov.projects.dto.TelegramType;
 import ru.apzakharov.projects.handlers.commands.Command;
 
 import java.util.HashMap;
-
+@Service
 public class CommandHandler extends AbstractHandler {
 
     private HashMap<Object, Command> hashMap = new HashMap<>();
